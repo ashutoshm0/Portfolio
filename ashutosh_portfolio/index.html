@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ashutosh Mishra — Portfolio</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur2"></div>
+<canvas id="bg3d"></canvas>
+<canvas id="bgp"></canvas>
+
+<!-- ════ INTRO ════ -->
+<div id="intro">
+  <div class="intro-grid"></div>
+
+  <div style="text-align:center;position:relative;z-index:2;">
+    <div class="intro-headline">Developer · Security · AI Engineer</div>
+    <div class="intro-name">ASHUTOSH MISHRA</div>
+    <div class="intro-title">Cybersecurity & Software Development Enthusiast &nbsp;·&nbsp; IEEE Student Council VP &nbsp;·&nbsp; NSS Volunteer</div>
+  </div>
+
+  <div class="sw" id="sw" style="position:relative;z-index:2;">
+    <div class="saya"></div>
+    <div id="blade"></div>
+    <div class="tsuba"></div>
+    <div class="tsuka"></div>
+    <div class="slash-el" id="slash"></div>
+    <div class="speed-lines" id="speedlines"></div>
+    <div id="dh">⚔</div>
+  </div>
+
+  <div class="draw-progress" id="dprog">
+    <div class="dp-seg"><div class="dp-fill" id="dp1"></div></div>
+    <div class="dp-seg"><div class="dp-fill" id="dp2"></div></div>
+    <div class="dp-seg"><div class="dp-fill" id="dp3"></div></div>
+    <div class="dp-seg"><div class="dp-fill" id="dp4"></div></div>
+  </div>
+  <div class="draw-hint">Drag the ⚔ handle right — or tap it once to auto-draw</div>
+  <button id="skip-intro">Skip Intro →</button>
+</div>
+
+<!-- ════ MAIN ════ -->
+<div id="main">
+
+<!-- NAV -->
+<nav id="nav" style="padding:26px 0;">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">AM</a>
+    <div class="nav-links">
+      <a href="#hero" class="on">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certs</a>
+      <a href="#leadership">Council</a>
+      <a href="#contact">Contact</a>
+    </div>
+<a href="mailto:pranshum830@gmail.com?subject=Internship%20Opportunity%20for%20Ashutosh&body=Hi%20Ashutosh%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity." class="nav-hire">Hire Me →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="acc-line"></div>
+  <div class="mw">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eye">Cybersecurity · AI/ML · Full-Stack Dev  &nbsp;·&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Open to Opportunities</div>
+        <h1 class="hn">
+          <span style="display:block;">Ashutosh</span>
+          <span class="g" style="display:block;">Mishra</span>
+        </h1>
+        <p class="hero-sub">
+          Building solutions that sit at the intersection of AI, cybersecurity, and the web. From real-time threat detection systems to winning national-level hackathons — precision in every line of code.
+        </p>
+        <div class="hero-tags">
+          <span class="htag">Python</span><span class="htag">AI / ML</span><span class="htag">Cybersecurity</span>
+          <span class="htag">React / JS</span><span class="htag">Node.js</span><span class="htag">OpenCV</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-solid">View Projects →</a>
+          <a href="https://github.com/ashutosh340" target="_blank" class="btn-out">GitHub ↗</a>
+          <a href="https://drive.google.com/file/d/1HPBDNOF14gGAD9eTpEezFFrH9jjX56VX/view?usp=sharing" download class="btn-out">Resume ↓</a>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <div class="stat-grid">
+          <div class="stat-card"><div class="stat-n">7.8</div><div class="stat-l">Academic GPA</div></div>
+          <div class="stat-card"><div class="stat-n">3rd Year</div><div class="stat-l">6th Semester</div></div>
+          <div class="stat-card"><div class="stat-n">3</div><div class="stat-l">Internships</div></div>
+          <div class="stat-card"><div class="stat-n">4+</div><div class="stat-l">Projects</div></div>
+          <div class="stat-card"><div class="stat-n">SIH '25</div><div class="stat-l">Grand Finalist</div></div>
+          <div class="stat-card"><div class="stat-n">IEEE VP</div><div class="stat-l">Leadership</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-text">AM</div>
+  <div class="scroll-ind">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="mw">
+    <div class="about-grid">
+      <div class="reveal-l">
+        <div class="sec-label">About Me</div>
+        <h2 class="st" style="margin-bottom:24px;">Precision in<br><span class="g">every craft.</span></h2>
+        <p class="at">I'm <span class="hl">Ashutosh Mishra</span> — a 3rd-year CSE student at GLBITM, but honestly that's the boring part. The interesting part? I build things that actually matter. AI systems that protect women. Pens that give disabled kids the ability to write. Networks that defend themselves.</p>
+        <p class="at">My path is defined by momentum.From clearing the hurdles of <span class="hl"> GATE 2026 </span> to leading a  <span class="hl"> 200-strong IEEE chapter as VP </span> I transition seamlessly from intense, solitary problem-solving to shaping the technical culture on campus.
+        <p class="at">For me, it's not just about what you know—it's about what you build and the community you bring along .</p>  
+        <div class="chips">
+          <span class="chip g">GLBITM 2027</span>
+          <span class="chip r">7.8 GPA</span>
+          <span class="chip">Greater Noida, UP</span>
+          <span class="chip g">IEEE VP</span>
+          <span class="chip">NSS Volunteer</span>
+          <span class="chip g">SIH 2025 Grand Finalist</span>
+          <span class="chip">GATE 2026 Appeared</span>
+          <span class="chip r">Hackathon Winner</span>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <div class="about-vis">
+          <div class="ring" style="width:200px;height:200px;animation:spin 13s linear infinite;"></div>
+          <div class="ring" style="width:275px;height:275px;border-color:rgba(184,50,40,.08);animation:spinr 20s linear infinite;"></div>
+          <div class="ring" style="width:350px;height:350px;animation:spin 28s linear infinite;border-color:rgba(201,168,76,.06);"></div>
+          <div class="about-photo-frame" style="position:relative;z-index:5;"></div>
+          <div class="petal-dot" style="top:15%;left:22%;animation:floatdot 5s ease-in-out infinite;"></div>
+          <div class="petal-dot" style="top:70%;left:76%;animation:floatdot 6s ease-in-out 1.4s infinite;transform:rotate(45deg);"></div>
+          <div class="petal-dot" style="top:80%;left:18%;animation:floatdot 5.5s ease-in-out 2.8s infinite;"></div>
+          <div class="petal-dot" style="top:45%;left:82%;animation:floatdot 4.5s ease-in-out .8s infinite;transform:rotate(135deg);"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="mw">
+    <div class="reveal" style="text-align:center;margin-bottom:60px;">
+      <div class="sec-label" style="justify-content:center;">Experience</div>
+      <h2 class="st">Experience <span class="g">Gained.</span></h2>
+    </div>
+    <div class="exp-wrap">
+      <div class="tl-line"></div>
+
+      <div class="exp-item reveal" style="transition-delay:0s;">
+        <div class="tl-dot" style="border-color:#1db8b8;"><div class="tl-dot-inner" style="background:#1db8b8;"></div></div>
+        <div class="exp-head">
+          <div><div class="exp-co-name">Cisco Networking Academy</div>
+            <div class="exp-role-txt" style="color:#1db8b8;">Cybersecurity Intern</div></div>
+          <div><div class="exp-date">June 2025 – Aug 2025</div>
+            <span class="exp-type-badge" style="border-color:rgba(29,184,184,.3);color:rgba(29,184,184,.75);">Hybrid</span></div>
+        </div>
+        <ul class="exp-pts">
+          <li>Simulated network vulnerabilities and implemented defence protocols using Cisco Packet Tracer</li>
+          <li>Applied cybersecurity essentials to real-world attack scenarios and mitigation strategies</li>
+          <li>Hands-on experience with enterprise network defence infrastructure and SIEM tools</li>
+        </ul>
+      </div>
+
+      <div class="exp-item reveal" style="transition-delay:.12s;">
+        <div class="tl-dot" style="border-color:#c9a84c;"><div class="tl-dot-inner" style="background:#c9a84c;"></div></div>
+        <div class="exp-head">
+          <div><div class="exp-co-name">Brainwave Matrix Solutions</div>
+            <div class="exp-role-txt" style="color:#c9a84c;">Web Development Intern</div></div>
+          <div><div class="exp-date">Sept 2024 – Dec 2024</div>
+            <span class="exp-type-badge" style="border-color:rgba(201,168,76,.3);color:rgba(201,168,76,.75);">Remote</span></div>
+        </div>
+        <ul class="exp-pts">
+          <li>Developed responsive front-end interfaces optimized for cross-device performance</li>
+          <li>Enhanced website UX delivering measurable improvements in user engagement metrics</li>
+          <li>Delivered production-ready components on schedule within an agile team environment</li>
+        </ul>
+      </div>
+
+      <div class="exp-item reveal" style="transition-delay:.24s;">
+        <div class="tl-dot" style="border-color:#b83228;"><div class="tl-dot-inner" style="background:#b83228;"></div></div>
+        <div class="exp-head">
+          <div><div class="exp-co-name">Personal AI/ML Projects</div>
+            <div class="exp-role-txt" style="color:#b83228;">Independent Builder</div></div>
+          <div><div class="exp-date">2024 – Present</div>
+            <span class="exp-type-badge" style="border-color:rgba(184,50,40,.3);color:rgba(184,50,40,.75);">Self-Directed</span></div>
+        </div>
+        <ul class="exp-pts">
+          <li>Built and deployed AI models for real-world safety and security applications</li>
+          <li>Researched YOLOv12 and MobileNetV4 architectures for real-time embedded inference</li>
+          <li>Integrated CV pipelines with IoT infrastructure and automated emergency alert systems</li>
+        </ul>
+      </div>
+
+      <div class="exp-item reveal" style="transition-delay:.36s;">
+        <div class="tl-dot" style="border-color:#4a90d9;"><div class="tl-dot-inner" style="background:#4a90d9;"></div></div>
+        <div class="exp-head">
+          <div><div class="exp-co-name">Unified Mentor Pvt Ltd</div>
+            <div class="exp-role-txt" style="color:#4a90d9;">Full-Stack Web Development Intern</div></div>
+          <div><div class="exp-date">Nov 2024 – Dec 2024</div>
+            <span class="exp-type-badge" style="border-color:rgba(74,144,217,.3);color:rgba(74,144,217,.75);">Remote</span></div>
+        </div>
+        <ul class="exp-pts">
+          <li>Completed 1-month full-stack internship building responsive interfaces and back-end logic</li>
+          <li>Recognised as consistent and hard-working by the ISO 9001:2015 certified organisation</li>
+          <li>Delivered production web components using HTML, CSS, JavaScript in a mentored environment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="mw">
+    <div class="reveal" style="text-align:center;margin-bottom:60px;">
+      <div class="sec-label" style="justify-content:center;">Projects</div>
+      <h2 class="st">Projects <span class="g">Built.</span></h2>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-card reveal" style="--pc:#b83228;transition-delay:0s;">
+        <div class="proj-num">01</div>
+        <span class="proj-icon">🛡️</span>
+        <div class="proj-name">AlertHer</div>
+        <div class="proj-sub" style="color:rgba(184,50,40,.75);">Women's Safety System</div>
+        <div class="proj-badge" style="border-color:rgba(184,50,40,.5);color:rgb(184,50,40,.5);">✦ Real-time emergency dispatch</div>
+        <p class="proj-desc">AI-powered threat detection using YOLOv12 and MobileNetV4 integrated with CCTV for real-time monitoring. Automated SMS/video dispatch pipeline reducing manual response latency.</p>
+        <div class="proj-techs"><span class="ptag">Python</span><span class="ptag">TensorFlow</span><span class="ptag">OpenCV</span><span class="ptag">Java</span><span class="ptag">YOLOv12</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;">
+          <div class="proj-date-txt" style="margin-top:0;">November 2026 - Present </div>
+          <a href="https://github.com/ashutosh340" target="_blank" style="font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(201,168,76,.5);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(201,168,76,.5)'">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="proj-card reveal" style="--pc:#c9a84c;transition-delay:0.1s;">
+        <div class="proj-num">02</div>
+        <span class="proj-icon">⚡</span>
+        <div class="proj-name">StreamDecoder</div>
+        <div class="proj-sub" style="color:rgba(201,168,76,.75);">Code Origin Tracker</div>
+        <div class="proj-badge" style="border-color:rgba(201,168,76,.5);color:rgb(201,168,76,.5);">✦ Live malicious code detection</div>
+        <p class="proj-desc">Real-time system detecting obfuscated code in live data streams via regex pattern matching. Classifies segments as open-source, proprietary, or malicious with sub-second latency.</p>
+        <div class="proj-techs"><span class="ptag">Python</span><span class="ptag">Node.js</span><span class="ptag">Regex</span><span class="ptag">WebSockets</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;">
+          <div class="proj-date-txt" style="margin-top:0;">August 2025</div>
+          <a href="https://github.com/ashutosh340" target="_blank" style="font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(201,168,76,.5);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(201,168,76,.5)'">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="proj-card reveal" style="--pc:#2980b9;transition-delay:0.2s;">
+        <div class="proj-num">03</div>
+        <span class="proj-icon">🔐</span>
+        <div class="proj-name">NetShield</div>
+        <div class="proj-sub" style="color:rgba(41,128,185,.75);">Network Vulnerability Simulator</div>
+        <div class="proj-badge" style="border-color:rgba(41,128,185,.5);color:rgb(41,128,185,.5);">✦ Enterprise-grade simulation</div>
+        <p class="proj-desc">Network simulation tool modeling real-world attack vectors and defence protocols. Designed for cybersecurity training and pen testing practice environments.</p>
+        <div class="proj-techs"><span class="ptag">Python</span><span class="ptag">Packet Tracer</span><span class="ptag">Wireshark</span><span class="ptag">Networking</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;">
+          <div class="proj-date-txt" style="margin-top:0;">2025</div>
+          <a href="https://github.com/ashutosh340" target="_blank" style="font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(201,168,76,.5);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(201,168,76,.5)'">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="proj-card reveal" style="--pc:#9b59b6;transition-delay:0.3s;">
+        <div class="proj-num">04</div>
+        <span class="proj-icon">✍️</span>
+        <div class="proj-name">GripEase</div>
+        <div class="proj-sub" style="color:rgba(155,89,182,.75);">Smart Ergonomic Pen for the Disabled</div>
+        <div class="proj-badge" style="border-color:rgba(155,89,182,.5);color:rgb(155,89,182,.5);">🏆 SIH 2025 Grand Finalist · Hardware</div>
+        <p class="proj-desc">Adaptive pen using MPU6050 gyroscope sensors to analyse grip, motion and pressure — 3D-printing a personalised pen body for each user. Built for individuals with hand disabilities. Selected for SIH 2025 Grand Finale.</p>
+        <div class="proj-techs"><span class="ptag">IoT</span><span class="ptag">MPU6050</span><span class="ptag">3D Printing</span><span class="ptag">Arduino</span><span class="ptag">CAD</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;">
+          <div class="proj-date-txt" style="margin-top:0;">SIH 2025 · Hardware Edition</div>
+          <a href="https://github.com/ashutosh340" target="_blank" style="font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(201,168,76,.5);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(201,168,76,.5)'">GitHub ↗</a>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="mw">
+    <div class="reveal" style="text-align:center;margin-bottom:60px;">
+      <div class="sec-label" style="justify-content:center;">Technical Skills</div>
+      <h2 class="st">Skills <span class="g">Developed.</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="reveal-l">
+        <div class="skill-cat">
+          <div class="skill-cat-title">Languages</div>
+          <div class="pills"><span class="pill">Python</span><span class="pill">C</span><span class="pill">C++</span><span class="pill">JavaScript</span><span class="pill">HTML/CSS</span><span class="pill">SQL</span></div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat-title">Frameworks & Libraries</div>
+          <div class="pills"><span class="pill">TensorFlow</span><span class="pill">OpenCV</span><span class="pill">Node.js</span><span class="pill">React</span><span class="pill">Regex</span><span class="pill">Linux</span></div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat-title">Cybersecurity Toolkit</div>
+          <div class="pills"><span class="pill">Ethical Hacking</span><span class="pill">Wireshark</span><span class="pill">John the Ripper</span><span class="pill">Cewl</span><span class="pill">SET</span><span class="pill">Hash-ID</span><span class="pill">VirusTotal</span><span class="pill">Packet Tracer</span></div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat-title">Core CS</div>
+          <div class="pills"><span class="pill">DSA</span><span class="pill">DAA</span><span class="pill">Computer Networks</span><span class="pill">DBMS</span><span class="pill">OS</span></div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat-title">Developer Tools</div>
+          <div class="pills"><span class="pill">VS Code</span><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">Eclipse</span><span class="pill">PyCharm</span></div>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <div class="skill-cat-title" style="margin-bottom:20px;">Proficiency</div>
+        <div id="bars">
+          <div class="bar-label-row"><span class="bar-name">Python</span><span class="bar-pct">80%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-w="80"></div></div>
+          <div class="bar-label-row"><span class="bar-name">Web Development</span><span class="bar-pct">82%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-w="82"></div></div>
+          <div class="bar-label-row"><span class="bar-name">Cybersecurity</span><span class="bar-pct">78%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-w="78"></div></div>
+          <div class="bar-label-row"><span class="bar-name">AI / Machine Learning</span><span class="bar-pct">72%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-w="72"></div></div>
+          <div class="bar-label-row"><span class="bar-name">C / C++</span><span class="bar-pct">72%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-w="72"></div></div>
+          <div class="bar-label-row"><span class="bar-name">Database & SQL</span><span class="bar-pct">75%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-w="75"></div></div>
+        </div>
+        <div class="circles-grid">
+          <div class="circ-item"><svg class="circ-svg" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="none" stroke="rgba(238,234,224,.05)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="#b83228" stroke-width="3" stroke-dasharray="0 113" stroke-linecap="round" transform="rotate(-90 22 22)" class="ca" data-v="72"/><text x="22" y="27" text-anchor="middle" fill="rgba(238,234,224,.45)" font-size="9" font-family="Raleway">72</text></svg><div class="circ-label">AI/ML</div></div>
+          <div class="circ-item"><svg class="circ-svg" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="none" stroke="rgba(238,234,224,.05)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="#c9a84c" stroke-width="3" stroke-dasharray="0 113" stroke-linecap="round" transform="rotate(-90 22 22)" class="ca" data-v="78"/><text x="22" y="27" text-anchor="middle" fill="rgba(238,234,224,.45)" font-size="9" font-family="Raleway">78</text></svg><div class="circ-label">Security</div></div>
+          <div class="circ-item"><svg class="circ-svg" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="none" stroke="rgba(238,234,224,.05)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="#2980b9" stroke-width="3" stroke-dasharray="0 113" stroke-linecap="round" transform="rotate(-90 22 22)" class="ca" data-v="82"/><text x="22" y="27" text-anchor="middle" fill="rgba(238,234,224,.45)" font-size="9" font-family="Raleway">82</text></svg><div class="circ-label">Web Dev</div></div>
+          <div class="circ-item"><svg class="circ-svg" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="none" stroke="rgba(238,234,224,.05)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="#1abc9c" stroke-width="3" stroke-dasharray="0 113" stroke-linecap="round" transform="rotate(-90 22 22)" class="ca" data-v="80"/><text x="22" y="27" text-anchor="middle" fill="rgba(238,234,224,.45)" font-size="9" font-family="Raleway">80</text></svg><div class="circ-label">Python</div></div>
+          <div class="circ-item"><svg class="circ-svg" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="none" stroke="rgba(238,234,224,.05)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="#9b59b6" stroke-width="3" stroke-dasharray="0 113" stroke-linecap="round" transform="rotate(-90 22 22)" class="ca" data-v="70"/><text x="22" y="27" text-anchor="middle" fill="rgba(238,234,224,.45)" font-size="9" font-family="Raleway">70</text></svg><div class="circ-label">Networking</div></div>
+          <div class="circ-item"><svg class="circ-svg" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="none" stroke="rgba(238,234,224,.05)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="#e67e22" stroke-width="3" stroke-dasharray="0 113" stroke-linecap="round" transform="rotate(-90 22 22)" class="ca" data-v="75"/><text x="22" y="27" text-anchor="middle" fill="rgba(238,234,224,.45)" font-size="9" font-family="Raleway">75</text></svg><div class="circ-label">DSA</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="mw">
+    <div class="reveal" style="text-align:center;margin-bottom:16px;">
+      <div class="sec-label" style="justify-content:center;">Certifications & Awards</div>
+      <h2 class="st">Certifications <span class="g">Earned.</span></h2>
+    </div>
+    <p class="cert-note reveal">Hover each card to reveal details &nbsp;↻</p>
+    <div class="cert-grid">
+
+      <div class="cert-flip reveal"><div class="cert-inner">
+        <div class="cert-front" style="background:rgba(248,0,0,.03);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#f80000,transparent);"></div>
+          <span class="cert-icon">☁️</span>
+          <div class="cert-title">Oracle Certified Foundations Associate in AI</div>
+          <div class="cert-issuer">Oracle</div>
+          <span class="cert-year" style="border-color:rgba(248,0,0,.3);color:rgba(248,0,0,.75);">OCI 2025</span>
+          <div class="cert-hint">Flip ↻</div>
+        </div>
+        <div class="cert-back" style="background:linear-gradient(135deg,rgba(248,0,0,.14),rgba(248,0,0,.05));border-color:rgba(248,0,0,.28);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#f80000,transparent);"></div>
+          <span class="cert-icon">☁️</span>
+          <div class="cert-back-desc">Oracle Cloud Infrastructure AI certification — cloud ML fundamentals, OCI services and AI model deployment.</div>
+          <div class="cert-back-meta" style="color:rgba(248,0,0,.65);">Oracle · OCI 2025</div>
+          <a href="https://drive.google.com/file/d/1OqF4fkJIGUj5Ao5ctsw_kM8DE7hjjM-L/view?usp=sharing" target="_blank" class="cert-view-link" style="color:#f80000;" onclick="event.stopPropagation()">View Certificate ↗</a>
+        </div>
+      </div></div>
+
+      <div class="cert-flip reveal" style="transition-delay:.1s;"><div class="cert-inner">
+        <div class="cert-front" style="background:rgba(250,88,45,.03);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#fa582d,transparent);"></div>
+          <span class="cert-icon">🔐</span>
+          <div class="cert-title">Palo Alto Cybersecurity Foundation</div>
+          <div class="cert-issuer">Palo Alto Networks Academy</div>
+          <span class="cert-year" style="border-color:rgba(250,88,45,.3);color:rgba(250,88,45,.75);">2024</span>
+          <div class="cert-hint">Flip ↻</div>
+        </div>
+        <div class="cert-back" style="background:linear-gradient(135deg,rgba(250,88,45,.14),rgba(250,88,45,.05));border-color:rgba(250,88,45,.28);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#fa582d,transparent);"></div>
+          <span class="cert-icon">🔐</span>
+          <div class="cert-back-desc">Network security, threat prevention, NGFW architecture and cybersecurity fundamentals from Palo Alto Networks Academy.</div>
+          <div class="cert-back-meta" style="color:rgba(250,88,45,.65);">Palo Alto Networks · 2024</div>
+          <a href="https://drive.google.com/file/d/1mLvGseQMRQUEkYaU4Wu7uexzboY3HgWs/view?usp=sharing" target="_blank" class="cert-view-link" style="color:#fa582d;" onclick="event.stopPropagation()">View Certificate ↗</a>
+        </div>
+      </div></div>
+
+      <div class="cert-flip reveal" style="transition-delay:.2s;"><div class="cert-inner">
+        <div class="cert-front" style="background:rgba(27,160,216,.03);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#1ba0d8,transparent);"></div>
+          <span class="cert-icon">🌐</span>
+          <div class="cert-title">Cisco Packet Tracer Certification</div>
+          <div class="cert-issuer">Cisco Networking Academy</div>
+          <span class="cert-year" style="border-color:rgba(27,160,216,.3);color:rgba(27,160,216,.75);">2024</span>
+          <div class="cert-hint">Flip ↻</div>
+        </div>
+        <div class="cert-back" style="background:linear-gradient(135deg,rgba(27,160,216,.14),rgba(27,160,216,.05));border-color:rgba(27,160,216,.28);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#1ba0d8,transparent);"></div>
+          <span class="cert-icon">🌐</span>
+          <div class="cert-back-desc">Exploring Networks with Cisco Packet Tracer — network simulation, routing, switching and enterprise defence protocols.</div>
+          <div class="cert-back-meta" style="color:rgba(27,160,216,.65);">Cisco Academy · 2024</div>
+          <a href="https://drive.google.com/file/d/1mLvGseQMRQUEkYaU4Wu7uexzboY3HgWs/view?usp=sharing" target="_blank" class="cert-view-link" style="color:#1ba0d8;" onclick="event.stopPropagation()">View Certificate ↗</a>
+        </div>
+      </div></div>
+
+      <div class="cert-flip reveal" style="transition-delay:.3s;"><div class="cert-inner">
+        <div class="cert-front" style="background:rgba(201,168,76,.03);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#c9a84c,transparent);"></div>
+          <span class="cert-icon">🏆</span>
+          <div class="cert-title">Tech Trivia Hackathon — 1st Place</div>
+          <div class="cert-issuer">GL Bajaj Institute (₹5,000 Prize)</div>
+          <span class="cert-year" style="border-color:rgba(201,168,76,.38);color:rgba(201,168,76,.88);">2025</span>
+          <div class="cert-hint">Flip ↻</div>
+        </div>
+        <div class="cert-back" style="background:linear-gradient(135deg,rgba(201,168,76,.14),rgba(201,168,76,.05));border-color:rgba(201,168,76,.32);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#c9a84c,transparent);"></div>
+          <span class="cert-icon">🏆</span>
+          <div class="cert-back-desc">"We came, we saw, we conquered." — Ctrl+Alt+Elite took 1st position, won ₹5,000 prize with an AI traffic management solution. 149 LinkedIn reactions.</div>
+          <div class="cert-back-meta" style="color:rgba(201,168,76,.75);">GLBITM · 2025</div>
+          <a href="https://drive.google.com/file/d/1ieLLjlJFekiyTdPyB3fKjUvczxQV6Cq3/view?usp=sharing" target="_blank" class="cert-view-link" style="color:#c9a84c;" onclick="event.stopPropagation()">View Certificate ↗</a>
+        </div>
+      </div></div>
+
+      <div class="cert-flip reveal" style="transition-delay:.4s;"><div class="cert-inner">
+        <div class="cert-front" style="background:rgba(0,156,222,.03);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#009cde,transparent);"></div>
+          <span class="cert-icon">⚙️</span>
+          <div class="cert-title">IEEE Student Council VP</div>
+          <div class="cert-issuer">IEEE — GLBITM Chapter</div>
+          <span class="cert-year" style="border-color:rgba(0,156,222,.3);color:rgba(0,156,222,.75);">2024–Present</span>
+          <div class="cert-hint">Flip ↻</div>
+        </div>
+        <div class="cert-back" style="background:linear-gradient(135deg,rgba(0,156,222,.14),rgba(0,156,222,.05));border-color:rgba(0,156,222,.28);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#009cde,transparent);"></div>
+          <span class="cert-icon">⚙️</span>
+          <div class="cert-back-desc">Vice-President of IEEE GLBITM chapter — organising technical events, workshops and industry sessions for 200+ members.</div>
+          <div class="cert-back-meta" style="color:rgba(0,156,222,.65);">IEEE · 2024–Present</div>
+          <a href="https://drive.google.com/file/d/1cyGzDhMfJOTgSubPuP-ROSETzBenReW1/view?usp=sharing" target="_blank" class="cert-view-link" style="color:rgba(0,156,222,.8);" onclick="event.stopPropagation()">View Certificate ↗</a>
+        </div>
+      </div></div>
+
+      <div class="cert-flip reveal" style="transition-delay:.5s;"><div class="cert-inner">
+        <div class="cert-front" style="background:rgba(26,188,156,.03);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#1abc9c,transparent);"></div>
+          <span class="cert-icon">🇮🇳</span>
+          <div class="cert-title">Smart India Hackathon 2025 — Grand Finalist</div>
+          <div class="cert-issuer">Ministry of Education, Govt of India</div>
+          <span class="cert-year" style="border-color:rgba(26,188,156,.3);color:rgba(26,188,156,.75);">SIH 2025</span>
+          <div class="cert-hint">Flip ↻</div>
+        </div>
+        <div class="cert-back" style="background:linear-gradient(135deg,rgba(26,188,156,.14),rgba(26,188,156,.05));border-color:rgba(26,188,156,.28);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#1abc9c,transparent);"></div>
+          <span class="cert-icon">🇮🇳</span>
+          <div class="cert-back-desc">Represented GLBITM at the Grand Finale of Smart India Hackathon 2025 (Hardware Edition) — a national-level innovation platform.</div>
+          <div class="cert-back-meta" style="color:rgba(26,188,156,.65);">SIH 2025 · Hardware Edition</div>
+          <a href="https://drive.google.com/file/d/1mfTM3BvydJDNZMUSkT1EPxqfwZJEzWXb/view?usp=sharing" target="_blank" class="cert-view-link" style="color:rgba(26,188,156,.8);" onclick="event.stopPropagation()">View Certificate ↗</a>
+        </div>
+      </div></div>
+
+
+      <div class="cert-flip reveal" style="transition-delay:.6s;"><div class="cert-inner">
+        <div class="cert-front" style="background:rgba(139,0,0,.03);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#8b0000,transparent);"></div>
+          <span class="cert-icon">🏥</span>
+          <div class="cert-title">MEDHA 2025 — Certificate of Appreciation</div>
+          <div class="cert-issuer">BETIC, IIT Bombay & GL Bajaj</div>
+          <span class="cert-year" style="border-color:rgba(139,0,0,.3);color:rgba(139,0,0,.75);">Oct 2025</span>
+          <div class="cert-hint">Flip ↻</div>
+        </div>
+        <div class="cert-back" style="background:linear-gradient(135deg,rgba(139,0,0,.14),rgba(139,0,0,.05));border-color:rgba(139,0,0,.28);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#8b0000,transparent);"></div>
+          <span class="cert-icon">🏥</span>
+          <div class="cert-back-desc">Volunteer at Medical Device Hackathon (MEDHA) Stage 1, 7–8 Oct 2025 — organised by BETIC IIT Bombay and GLBITM.</div>
+          <div class="cert-back-meta" style="color:rgba(139,0,0,.65);">BETIC IIT Bombay · 2025</div>
+          <a href="https://drive.google.com/file/d/1s9Ku-VQw3UDzwDU1mW9EyvsU94qjD_f9/view?usp=sharing" target="_blank" class="cert-view-link" style="color:rgba(139,0,0,.8);" onclick="event.stopPropagation()">View Certificate ↗</a>
+        </div>
+      </div></div>
+
+      <div class="cert-flip reveal" style="transition-delay:.7s;"><div class="cert-inner">
+        <div class="cert-front" style="background:rgba(0,86,179,.03);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#0056b3,transparent);"></div>
+          <span class="cert-icon">⚡</span>
+          <div class="cert-title">AISYWLC 2025 — Certificate of Participation</div>
+          <div class="cert-issuer">IEEE India Council & Gujarat Section</div>
+          <span class="cert-year" style="border-color:rgba(0,86,179,.3);color:rgba(0,86,179,.75);">Oct–Nov 2025</span>
+          <div class="cert-hint">Flip ↻</div>
+        </div>
+        <div class="cert-back" style="background:linear-gradient(135deg,rgba(0,86,179,.14),rgba(0,86,179,.05));border-color:rgba(0,86,179,.28);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#0056b3,transparent);"></div>
+          <span class="cert-icon">⚡</span>
+          <div class="cert-back-desc">Participated in AISYWLC 2025 — 31 Oct to 2 Nov 2025, Adani and Nirma University, Ahmedabad. IEEE India Council event.</div>
+          <div class="cert-back-meta" style="color:rgba(0,86,179,.65);">IEEE India Council · 2025</div>
+          <a href="https://drive.google.com/file/d/17HrEuR-HK9r4dGwmKHGZkMxqzHDfrsQ6/view?usp=sharing" target="_blank" class="cert-view-link" style="color:rgba(0,86,179,.8);" onclick="event.stopPropagation()">View Certificate ↗</a>
+        </div>
+      </div></div>
+
+      <div class="cert-flip reveal" style="transition-delay:.8s;"><div class="cert-inner">
+        <div class="cert-front" style="background:rgba(74,144,217,.03);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#4a90d9,transparent);"></div>
+          <span class="cert-icon">💻</span>
+          <div class="cert-title">Full-Stack Web Dev Internship</div>
+          <div class="cert-issuer">Unified Mentor Pvt Ltd</div>
+          <span class="cert-year" style="border-color:rgba(74,144,217,.3);color:rgba(74,144,217,.75);">Dec 2024</span>
+          <div class="cert-hint">Flip ↻</div>
+        </div>
+        <div class="cert-back" style="background:linear-gradient(135deg,rgba(74,144,217,.14),rgba(74,144,217,.05));border-color:rgba(74,144,217,.28);">
+          <div class="cert-bar" style="background:linear-gradient(90deg,transparent,#4a90d9,transparent);"></div>
+          <span class="cert-icon">💻</span>
+          <div class="cert-back-desc">Completed 1-month Full-Stack Web Development Internship at Unified Mentor Pvt Ltd, Nov–Dec 2024. ISO 9001:2015 certified.</div>
+          <div class="cert-back-meta" style="color:rgba(74,144,217,.65);">Unified Mentor · Dec 2024</div>
+          <a href="https://drive.google.com/file/d/1TmePvBxfzMRcz9SEKBms9SWrWLgI-ufe/view?usp=sharing" target="_blank" class="cert-view-link" style="color:rgba(74,144,217,.8);" onclick="event.stopPropagation()">View Certificate ↗</a>
+        </div>
+      </div></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership">
+  <div class="mw">
+    <div class="reveal" style="text-align:center;margin-bottom:60px;">
+      <div class="sec-label" style="justify-content:center;">Leadership & Extracurricular</div>
+      <h2 class="st">The <span class="g">Council.</span></h2>
+    </div>
+    <div class="lead-list">
+      <div class="lead-item reveal">
+        <div class="lead-icon">⚙️</div>
+        <div>
+          <div class="lead-org">IEEE Student Branch — GLBITM</div>
+          <div class="lead-role-txt">Vice-President</div>
+          <div class="lead-period">Winter 2024 – Present· Greater Noida · On-site</div>
+          <div class="lead-desc">Leading the IEEE chapter — organising technical workshops, hackathons and industry sessions for 200+ members. Driving innovation culture and inter-college technical collaborations across the region.</div>
+        </div>
+      </div>
+      <div class="lead-item reveal" style="transition-delay:.12s;">
+        <div class="lead-icon">🎭</div>
+        <div>
+          <div class="lead-org">Navrang Cultural Club — GLBITM</div>
+          <div class="lead-role-txt">Executive Member · Event Management</div>
+          <div class="lead-period">Monsoon 2024 – Present · Greater Noida · On-site </div>
+          <div class="lead-desc">Managing and executing large-scale cultural events. Coordinating logistics, creative direction and team operations for annual campus festivals and inter-college cultural competitions.</div>
+        </div>
+      </div>
+      <div class="lead-item reveal" style="transition-delay:.24s;">
+        <div class="lead-icon">🤝</div>
+        <div>
+          <div class="lead-org">National Service Scheme (NSS)</div>
+          <div class="lead-role-txt">NSS Volunteer</div>
+          <div class="lead-period">GLBITM Chapter</div>
+          <div class="lead-desc">Active NSS volunteer contributing to community service initiatives, social awareness campaigns and nation-building activities organized through the GLBITM NSS unit.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="mw">
+    <div class="reveal">
+      <div class="contact-sup">Get In Touch</div>
+      <h2 class="ct">Let's build<br><span class="g">something.</span></h2>
+      <a href="mailto:pranshum830@gmail.com" class="contact-email">pranshum830@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/ashutoshmishra45" target="_blank">↗ LinkedIn</a>
+        <a href="https://github.com/ashutosh340" target="_blank">↗ GitHub</a>
+        <a href="mailto:pranshum830@gmail.com">✉ Email</a>
+        <a href="https://drive.google.com/file/d/1HPBDNOF14gGAD9eTpEezFFrH9jjX56VX/view?usp=sharing" download>↓ Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GUESTBOOK -->
+<section id="guestbook">
+  <div class="mw">
+    <div class="reveal" style="text-align:center;margin-bottom:16px;">
+      <div class="sec-label" style="justify-content:center;">Say Hello</div>
+      <h2 class="st">Leave a <span class="g">Message.</span></h2>
+    </div>
+    <p style="text-align:center;font-size:.82rem;color:rgba(238,234,224,.38);margin-bottom:0;">Drop a note, question, or just say hi — I read every message.</p>
+    <div class="gb-grid">
+      <div>
+        <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:var(--gold);margin-bottom:20px;">Send me a message</h3>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div><label class="gb-label">Your Name *</label><input class="gb-input" id="gb-name" type="text" placeholder="ashu " maxlength="60"/></div>
+          <div><label class="gb-label">Your Email *</label><input class="gb-input" id="gb-email" type="email" placeholder="ashu@example.com" maxlength="100"/></div>
+          <div><label class="gb-label">Phone / LinkedIn (optional)</label><input class="gb-input" id="gb-contact" type="text" placeholder="+91 98765 4321
+            " maxlength="120"/></div>
+          <div><label class="gb-label">Message *</label><textarea class="gb-textarea" id="gb-msg" placeholder="Your message, feedback, or just a hello..." maxlength="600"></textarea></div>
+          <label style="display:flex;align-items:center;gap:8px;font-size:.74rem;color:rgba(238,234,224,.38);cursor:pointer;">
+            <input type="checkbox" id="gb-public" style="accent-color:var(--gold);width:14px;height:14px;"/>
+            Show comment publicly on this page
+          </label>
+          <button class="gb-btn" onclick="submitGB()">Send Message →</button>
+          <div class="gb-status" id="gb-status"></div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:var(--gold);margin-bottom:20px;">Comments <span style="font-size:.7rem;color:rgba(238,234,224,.28);font-family:'Raleway',sans-serif;" id="gb-count"></span></h3>
+        <div class="gb-comments" id="gb-comments">
+          <div class="gb-empty" id="gb-empty">No comments yet — be the first! ✦</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Ashutosh Mishra</span>
+  <span>Stay Hungry, Stay Foolish &nbsp;·&nbsp; GLBITM 2027 CSE</span>
+  <span>Three.js · Vanilla JS · CSS3</span>
+</footer>
+
+</div><!-- /main -->
+
+<script src="script.js"></script>
+</body>
+</html>
