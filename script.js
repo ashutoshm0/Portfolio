@@ -171,6 +171,7 @@ var mm=document.getElementById('mobile-menu');
 var mc=document.getElementById('mobile-close');
 if(hb)hb.addEventListener('click',function(){mm.classList.add('open');});
 if(mc)mc.addEventListener('click',function(){mm.classList.remove('open');});
+if(mm)mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');});});
 
 /* GUESTBOOK */
 function submitGB(){
@@ -197,7 +198,7 @@ function submitGB(){
       document.getElementById('gb-public').checked=false;
       if(pub)addC(name,msg);
     }else{st.style.color='#b83228';st.textContent='Something went wrong. Email me directly.';}
-  }).catch(function(){st.style.color='rgba(238,234,224,.5)';st.textContent='xojkyewj';if(pub)addC(name,msg);});
+  }).catch(function(){st.style.color='#b83228';st.textContent='Something went wrong. Email me directly.';});
 }
 function addC(name,msg){
   var c=JSON.parse(localStorage.getItem('gb')||'[]');
