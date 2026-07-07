@@ -61,10 +61,26 @@
       <a href="#certificates">Certs</a>
       <a href="#leadership">Council</a>
       <a href="#contact">Contact</a>
-    </div>
-<a href="mailto:pranshum830@gmail.com?subject=Internship%20Opportunity%20for%20Ashutosh&body=Hi%20Ashutosh%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity." class="nav-hire">Hire Me →</a>
   </div>
+    <button class="nav-hamburger" id="ham-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+<a href="mailto:pranshum830@gmail.com?subject=Internship%20Opportunity%20for%20Ashutosh&body=Hi%20Ashutosh%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity." class="nav-hire">Hire Me →</a>
+</div>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certificates">Certs</a>
+  <a href="#leadership">Council</a>
+  <a href="#contact">Contact</a>
+</div>
 
 <!-- HERO -->
 <section id="hero">
@@ -87,17 +103,20 @@
         <div class="hero-btns">
           <a href="#projects" class="btn-solid">View Projects →</a>
           <a href="https://github.com/ashutoshm0" target="_blank" class="btn-out">GitHub ↗</a>
+          <a href="https://leetcode.com/u/AshutoshMishra45/" target="_blank" class="btn-out">LeetCode ↗</a>
           <a href="https://drive.google.com/file/d/1HPBDNOF14gGAD9eTpEezFFrH9jjX56VX/view?usp=sharing" download class="btn-out">Resume ↓</a>
         </div>
       </div>
       <div class="reveal-r">
-        <div class="stat-grid">
-          <div class="stat-card"><div class="stat-n">7.8</div><div class="stat-l">Academic GPA</div></div>
-          <div class="stat-card"><div class="stat-n">3rd Year</div><div class="stat-l">6th Semester</div></div>
-          <div class="stat-card"><div class="stat-n">3</div><div class="stat-l">Internships</div></div>
-          <div class="stat-card"><div class="stat-n">4+</div><div class="stat-l">Projects</div></div>
-          <div class="stat-card"><div class="stat-n">SIH '25</div><div class="stat-l">Grand Finalist</div></div>
-          <div class="stat-card"><div class="stat-n">IEEE VP</div><div class="stat-l">Leadership</div></div>
+        <div class="about-vis">
+          <div class="ring" style="width:200px;height:200px;animation:spin 13s linear infinite;"></div>
+          <div class="ring" style="width:275px;height:275px;border-color:rgba(184,50,40,.08);animation:spinr 20s linear infinite;"></div>
+          <div class="ring" style="width:350px;height:350px;animation:spin 28s linear infinite;border-color:rgba(201,168,76,.06);"></div>
+          <div class="about-photo-frame" style="position:relative;z-index:5;"></div>
+          <div class="petal-dot" style="top:15%;left:22%;animation:floatdot 5s ease-in-out infinite;"></div>
+          <div class="petal-dot" style="top:70%;left:76%;animation:floatdot 6s ease-in-out 1.4s infinite;transform:rotate(45deg);"></div>
+          <div class="petal-dot" style="top:80%;left:18%;animation:floatdot 5.5s ease-in-out 2.8s infinite;"></div>
+          <div class="petal-dot" style="top:45%;left:82%;animation:floatdot 4.5s ease-in-out .8s infinite;transform:rotate(135deg);"></div>
         </div>
       </div>
     </div>
@@ -121,7 +140,6 @@
         <p class="at">For me, it's not just about what you know—it's about what you build and the community you bring along .</p>  
         <div class="chips">
           <span class="chip g">GLBITM 2027</span>
-          <span class="chip r">7.8 GPA</span>
           <span class="chip">Greater Noida, UP</span>
           <span class="chip g">IEEE VP</span>
           <span class="chip">NSS Volunteer</span>
@@ -131,15 +149,16 @@
         </div>
       </div>
       <div class="reveal-r">
-        <div class="about-vis">
-          <div class="ring" style="width:200px;height:200px;animation:spin 13s linear infinite;"></div>
-          <div class="ring" style="width:275px;height:275px;border-color:rgba(184,50,40,.08);animation:spinr 20s linear infinite;"></div>
-          <div class="ring" style="width:350px;height:350px;animation:spin 28s linear infinite;border-color:rgba(201,168,76,.06);"></div>
-          <div class="about-photo-frame" style="position:relative;z-index:5;"></div>
-          <div class="petal-dot" style="top:15%;left:22%;animation:floatdot 5s ease-in-out infinite;"></div>
-          <div class="petal-dot" style="top:70%;left:76%;animation:floatdot 6s ease-in-out 1.4s infinite;transform:rotate(45deg);"></div>
-          <div class="petal-dot" style="top:80%;left:18%;animation:floatdot 5.5s ease-in-out 2.8s infinite;"></div>
-          <div class="petal-dot" style="top:45%;left:82%;animation:floatdot 4.5s ease-in-out .8s infinite;transform:rotate(135deg);"></div>
+        <div class="stat-grid">
+           <div class="stat-card"><div class="stat-n">Trainee @ Coforge</div><div class="stat-l">Graduate Engineer Trainee @ Coforge</div></div>          
+          <div class="stat-card"><div class="stat-n">IEEE VP</div><div class="stat-l">Leadership</div></div>
+          <div class="stat-card"><div class="stat-n">4+</div><div class="stat-l">Projects</div></div>
+          
+          <div class="stat-card"><div class="stat-n">300+</div><div class="stat-l">DSA Problems Solved</div></div>
+          <div class="stat-card"><div class="stat-n">10+</div><div class="stat-l">Certifications</div></div>
+          <div class="stat-card"><div class="stat-n">4</div><div class="stat-l">Internships</div></div>
+          <div class="stat-card"><div class="stat-n">SIH '25</div><div class="stat-l">Grand Semi-Finalist</div></div>
+          <div class="stat-card"><div class="stat-n"> Winner</div><div class="stat-l">Tech Trivia Hackathon </div></div>
         </div>
       </div>
     </div>
@@ -571,6 +590,7 @@
       <div class="contact-links">
         <a href="https://linkedin.com/in/ashutoshmishra45" target="_blank">↗ LinkedIn</a>
         <a href="https://github.com/ashutoshm0" target="_blank">↗ GitHub</a>
+        <a href="https://leetcode.com/u/AshutoshMishra45/" target="_blank">↗ LeetCode</a>
         <a href="mailto:pranshum830@gmail.com">✉ Email</a>
         <a href="https://drive.google.com/file/d/1HPBDNOF14gGAD9eTpEezFFrH9jjX56VX/view?usp=sharing" download>↓ Resume</a>
       </div>
