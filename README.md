@@ -4,14 +4,14 @@ Developer · Security · AI Engineer
 
 🔗 View Live Site →
 
-Show Image
+![Preview](./assets/preview.png)
 
 Personal portfolio site for a Cybersecurity & AI/ML enthusiast, IEEE Student Council VP, and SIH 2025 Grand Finalist. Built from scratch with vanilla JS and Three.js — no framework, no template.
 
 
 🎬 Demo
 
-Show Image
+![Demo](./assets/demo.gif)
 
 ✨ Highlights
 
