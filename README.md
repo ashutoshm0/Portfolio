@@ -4,15 +4,18 @@ Developer · Security · AI Engineer
 
 🔗 [View Live Site →](https://ashutoshm0.github.io/Portfolio/)
 
+![Preview](./assets/Preview1.png)
 
+-
 ![Preview](./assets/preview.png)
+
 
 Personal portfolio site for a Cybersecurity & AI/ML enthusiast, IEEE Student Council VP, and SIH 2025 Grand Finalist. Built from scratch with vanilla JS and Three.js — no framework, no template.
 
 
 🎬 Demo
 
-![Demo]( ./assets/demo.gif )
+![Demo]( ./assets/demo.gif)
 
 ✨  
 
