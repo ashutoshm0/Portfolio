@@ -77,9 +77,8 @@ StreamDecoder — Real-time obfuscated/malicious code detection in live data str
 
 
 Email: pranshum830@gmail.com
-LinkedIn: ashutoshmishra45
-GitHub: ashutosh340
-Resume: View / Download
+
+LinkedIn: [ashutoshmishra45](https://www.linkedin.com/in/ashutoshmishra45/)
 
 
 
