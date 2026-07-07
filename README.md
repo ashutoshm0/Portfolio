@@ -2,7 +2,8 @@ Ashutosh Mishra — Portfolio
 
 Developer · Security · AI Engineer
 
-🔗 View Live Site →
+🔗 [View Live Site →](https://ashutoshm0.github.io/Portfolio/)
+
 
 ![Preview](./assets/preview.png)
 
@@ -11,9 +12,9 @@ Personal portfolio site for a Cybersecurity & AI/ML enthusiast, IEEE Student Cou
 
 🎬 Demo
 
-![Demo](./assets/demo.gif)
+![Demo]( ./assets/demo.gif )
 
-✨ Highlights
+✨  
 
 
 Custom drag-to-unlock intro animation (sword-drag interaction) built with Three.js
